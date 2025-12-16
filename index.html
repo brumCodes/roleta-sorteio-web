@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta da Sorte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Roleta da Sorte</h1>
+            <p>Insira os nomes abaixo (um por linha)</p>
+        </header>
+
+        <div class="main-content">
+            <div class="controls">
+                <textarea id="nomesInput" placeholder="Digite os nomes aqui...">João
+Maria
+Pedro
+Ana
+Lucas</textarea>
+                <div class="buttons">
+                    <button id="btnAtualizar" onclick="desenharRoleta()">Atualizar Roleta</button>
+                    <button id="btnGirar" onclick="girar()">GIRAR!</button>
+                </div>
+            </div>
+
+            <div class="wheel-container">
+                <div class="seta"></div> <canvas id="roleta" width="500" height="500"></canvas>
+            </div>
+        </div>
+
+        <div id="modalResultado" class="modal">
+            <div class="modal-content">
+                <h2>O Vencedor é:</h2>
+                <h3 id="textoVencedor">...</h3>
+                <button onclick="fecharModal()">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
