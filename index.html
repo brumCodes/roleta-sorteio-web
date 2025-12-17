@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8J06N6RN4L"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-8J06N6RN4L');
+      gtag('config', 'G-8J06N6RN4L');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roleta da Sorte</title>
+    
+    <title>Roleta de Sorteio Online e Grátis | Sorteador de Nomes</title>
+    <meta name="description" content="Ferramenta gratuita para fazer sorteios online girando a roleta. Ideal para Instagram, sala de aula e amigos. Simples, rápido e sem cadastro.">
+    <meta name="keywords" content="roleta online, sorteio de nomes, wheel of names, sorteador, girar roleta">
+
+    <meta property="og:title" content="Roleta de Sorteio Online - Gire Agora">
+    <meta property="og:description" content="Ferramenta grátis para sortear nomes e prêmios.">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/2453/2453308.png"> <meta property="og:url" content="https://roleta-facil-online.netlify.app">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,12 +28,12 @@
     <div class="container">
         <header>
             <h1>Roleta da Sorte</h1>
-            <p>Insira os nomes abaixo (um por linha)</p>
+            <p>Insira os nomes abaixo e gire a roda!</p>
         </header>
 
         <div class="main-content">
             <div class="controls">
-                <textarea id="nomesInput" placeholder="Digite os nomes aqui...">João
+                <textarea id="nomesInput" placeholder="Digite os nomes aqui (um por linha)...">João
 Maria
 Pedro
 Ana
@@ -37,9 +45,33 @@ Lucas</textarea>
             </div>
 
             <div class="wheel-container">
-                <div class="seta"></div> <canvas id="roleta" width="500" height="500"></canvas>
+                <div class="seta"></div>
+                <canvas id="roleta" width="500" height="500"></canvas>
             </div>
         </div>
+
+        <section style="max-width: 800px; margin: 60px auto; padding: 20px; text-align: left; background: rgba(0,0,0,0.2); border-radius: 10px;">
+            <h2 style="color: #f1c40f;">Como funciona a Roleta de Sorteio?</h2>
+            <p>
+                Nossa <strong>roleta online personalizada</strong> é a ferramenta ideal para tomar decisões aleatórias de forma divertida. 
+                Seja para realizar um <strong>sorteio no Instagram</strong>, definir a ordem de apresentação em sala de aula ou sortear brindes em festas.
+            </p>
+            
+            <h3 style="color: #f1c40f;">Por que usar nossa roleta?</h3>
+            <ul style="line-height: 1.6;">
+                <li><strong>100% Gratuita:</strong> Sem limites de uso.</li>
+                <li><strong>Sem Cadastro:</strong> É só digitar os nomes e girar.</li>
+                <li><strong>Justa e Segura:</strong> Utilizamos algoritmos matemáticos para garantir que o resultado seja totalmente aleatório.</li>
+                <li><strong>Mobile Friendly:</strong> Funciona perfeitamente no celular.</li>
+            </ul>
+
+            <p><small style="opacity: 0.7;">Termos frequentes: roleta aleatória, wheel of names português, sorteador de nomes, roleta russa virtual, girar a roda.</small></p>
+            
+            <div style="margin-top: 30px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+                <p>Gostou da ferramenta?</p>
+                <p>Compartilhe com seus amigos!</p>
+            </div>
+        </section>
 
         <div id="modalResultado" class="modal">
             <div class="modal-content">
